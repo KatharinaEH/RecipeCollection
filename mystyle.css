@@ -1,0 +1,188 @@
+body {
+	font-size: 100%;
+	color: #333;
+	background: #f2f2f2;
+}
+
+h1 {
+	text-align: center;
+	font-variant: small-caps;
+	font-size: 2.5em;
+}
+
+input {
+	width:100%;
+}
+
+.picture {
+	border: 0.4em double #333;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	height: auto;
+	width: auto; 
+	max-width: 30em; 
+	max-height: 30em;
+}
+
+
+
+.servings {
+	max-width: 50em;
+	margin: auto;
+}
+
+.ingredients {
+	max-width: 50em;
+	margin: auto;
+}
+
+
+.method {
+	max-width: 50em;
+	margin: auto;
+}
+
+.method p {
+	margin-top: 0em;
+	margin-bottom: 0.2em;
+}
+
+
+.suggestions {
+	max-width: 50em;
+	margin: auto;
+	margin-top: 3em;
+}
+
+.suggestions p {
+	margin-top: 0em;
+	margin-bottom: 0.2em;
+}
+
+.source {
+	max-width: 50em;
+	margin: auto;
+	margin-top: 3em;
+}
+
+.source p {
+	margin-top:0em;
+	margin-bottom: 0.2em;
+}
+
+.notes {
+	max-width: 50em;
+	margin: auto;
+	margin-top: 2em;
+}
+
+.notes p {
+	font-size:80%;
+	margin-top:0em;
+	margin-bottom: 0.2em;
+}
+
+.nutrients {
+	max-width: 50em;
+	margin: auto;
+	margin-top: 2em;
+}
+
+.nutrients p {
+	font-size:80%;
+	margin-top:0em;
+	margin-bottom: 0.2em;
+}
+
+
+
+.index {
+	max-width: 50em;
+	margin: auto;
+	margin-top: 3em;
+}
+
+
+
+.navigation ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+.navigation li {
+    float: left;
+}
+
+.navigation li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navigation li a:hover {
+    background-color: #111;
+}
+
+table {
+    border-collapse: collapse;
+    width: 80%;
+	
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+tr:hover{background-color:#f5f5f5}
+
+
+textarea.big {
+    width: 100%;
+    max-width: 82em;
+	height: 7em;
+    padding: 0.5em 0.5em;
+    margin: 0.5em 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=text], select {
+    width: 100%;
+    max-width: 80em;
+    padding: 0.5em 0.5em;
+    margin: 0.5em 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 100%;
+    max-width: 80em;
+    padding: 0.5em 0.5em;
+    margin: 0.5em 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    cursor: pointer;
+	background-color: #333;
+	color: white;
+}
+
+.table {
+		max-width: 80em;
+		margin: auto;
+		margin-top: 3em;
+}

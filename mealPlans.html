@@ -1,0 +1,954 @@
+﻿<!DOCTYPE html>
+<html>
+
+
+<head>
+	<title>Meals</title>
+	<link rel="stylesheet" type="text/css" href="mystyle.css">
+</head>
+
+<body onload="sortTable(0)">
+
+
+
+<div class="navigation">
+	<ul>
+		<li><a href="index.html">Index</a></li>
+	</ul>
+</div>
+
+
+
+<h1>Meal Plans</h1>
+
+
+
+<div class=table>
+<input type="text" id="searchInput" onkeyup="searchTable()" placeholder="Search...">
+
+<table style="width:100%" id="meals">
+  <tr>
+    <th style="width:50%"  onclick="sortTable(0)">Meal</th>
+    <th style="width:10%" onclick="sortTable(1)">Recipe</th>
+    <th style="width:10%" onclick="sortTable(2)">Vegatarian/Fish/Meat</th>
+    <th style="width:10%" onclick="sortTable(3)">Origin</th>
+    <th style="width:20%" onclick="sortTable(4)">Tags</th>
+  </tr>
+ 	<tr>
+		<td>XXX</td>
+		<td><a href="recipes/XXX.html">Link</a></td>
+		<td>Vegetarian</td>
+		<td>&nbsp;</td>
+		<td>Keys</td>
+	</tr>
+ 
+ 
+  	<tr>
+		<td>Bean Burgers</td>
+		<td><a href="recipes/Bean Burgers.html">Link</a></td>
+		<td>Vegetarian</td>
+		<td>&nbsp;</td>
+		<td>Main</td>
+	</tr>
+  	<tr>
+		<td>Beef Enchiladas</td>
+		<td><a href="recipes/Beef Enchiladas.html">Link</a></td>
+		<td>Meat</td>
+		<td>Mexican</td>
+		<td>Main, Dinner</td>
+	</tr>
+  	<tr>
+		<td>Chicken And Rice Bake</td>
+		<td><a href="recipes/Chicken And Rice Bake.html">Link</a></td>
+		<td>Meat</td>
+		<td></td>
+		<td>Main, Dinner</td>
+	</tr>
+  	<tr>
+		<td>Beet Overnight Oats</td>
+		<td><a href="recipes/Beet Overnight Oats.html">Link</a></td>
+		<td>Vegetarian</td>
+		<td>&nbsp;</td>
+		<td>Breakfast</td>
+	</tr>
+ 	<tr>
+		<td>Bircher Muesli</td>
+		<td><a href="recipes/Bircher Muesli.html">Link</a></td>
+		<td>Vegetarian</td>
+		<td>&nbsp;</td>
+		<td>Breakfast</td>
+	</tr>
+	 	<tr>
+		<td>Black Beans</td>
+		<td><a href="recipes/Black Beans.html">Link</a></td>
+		<td>Vegetarian</td>
+		<td>&nbsp;</td>
+		<td>Side, Basics</td>
+	</tr>
+	 	<tr>
+		<td>Blackberry Cordial</td>
+		<td><a href="recipes/Blackberry Cordial.html">Link</a></td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>Preserving, Drinks</td>
+	</tr>  
+	<tr>
+		<td>Cauliflower, Maccaroni and Cheese</td>
+		<td>&nbsp;</td>
+		<td>Vegetarian</td>
+		<td>&nbsp;</td>
+		<td>Pasta, Cheese, Comfort Food</td>
+	</tr>
+	<tr>
+		<td>Maccaroni and Cheese</td>
+		<td>&nbsp;</td>
+		<td>Vegetarian</td>
+		<td>&nbsp;</td>
+		<td>Pasta, Cheese, Comfort Food</td>
+	</tr>
+	<tr>
+		<td>Mushrooms and Minute Steak on Toasted Sourdough</td>
+		<td>&nbsp;</td>
+		<td>Meat</td>
+		<td>&nbsp;</td>
+		<td>Toast, Lunch</td>
+	</tr>
+	<tr>
+		<td>Sausages, Potato Mash and Peas</td>
+		<td>&nbsp;</td>
+		<td>Meat</td>
+		<td>UK</td>
+		<td>Comfort Food</td>
+	</tr>
+	<tr>
+		<td>Lentil Bolognese with Pasta</td>
+		<td>&nbsp;</td>
+		<td>Vegetarian</td>
+		<td>&nbsp;</td>
+		<td>Pasta</td>
+	</tr>
+	<tr>
+		<td>Lentil Bolognese with Spinach and Quinoa</td>
+		<td>Ella Everyday</td>
+		<td>Vegetarian</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+	</tr>
+	<tr>
+		<td>Potato Goulash</td>
+		<td><a href="recipes/Potato Goulash.html">Link</a></td>
+		<td>Vegetarian (if adjusted)</td>
+		<td>Austrian</td>
+		<td>&nbsp;</td>
+	</tr>
+	<tr>
+		<td>Lentil Dahl with tofu</td>
+		<td>&nbsp;</td>
+		<td>Vegetarian</td>
+		<td>Indian</td>
+		<td>Curry</td>
+	</tr>
+	<tr>
+		<td>Lentil Dahl with Dry Cauliflower Curry</td>
+		<td>&nbsp;</td>
+		<td>Vegetarian</td>
+		<td>Indian</td>
+		<td>Curry</td>
+	</tr>
+	<tr>
+		<td>Semmelkn&ouml;del wih mushroom sauce</td>
+		<td>&nbsp;</td>
+		<td>Vegetarian</td>
+		<td>Austrian</td>
+		<td>&nbsp;</td>
+	</tr>
+	<tr>
+		<td>Vegetable Chili with Jacket potatoes</td>
+		<td>&nbsp;</td>
+		<td>Vegetarian</td>
+		<td>&nbsp;</td>
+		<td>Chili</td>
+	</tr>
+	<tr>
+		<td>Vegetable Chili with Polenta</td>
+		<td>&nbsp;</td>
+		<td>Vegetarian</td>
+		<td>&nbsp;</td>
+		<td>Chili</td>
+	</tr>
+	<tr>
+		<td>Cottage Pie with Peas</td>
+		<td>&nbsp;</td>
+		<td>Meat</td>
+		<td>UK</td>
+		<td>&nbsp;</td>
+	</tr>
+	<tr>
+		<td>Fish Filllet fried in Butter with new potatoes and parsley sauce</td>
+		<td>&nbsp;</td>
+		<td>Fish</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+	</tr>
+	<tr>
+		<td>Kimchi Stew with Lotus Root</td>
+		<td>&nbsp;</td>
+		<td>Meat</td>
+		<td>Korean</td>
+		<td>Soup</td>
+	</tr>
+	<tr>
+		<td>Kimchi Pancakes</td>
+		<td><a href="https://www.maangchi.com/recipe/kimchijeon" target="_blank">Maangchi</a></td>
+		<td>Vegetarian</td>
+		<td>Korean</td>
+		<td>&nbsp;</td>
+	</tr>
+
+
+	<tr>
+		<td>Wood Ear Fungus Salad</td>
+		<td><a href="https://www.chinasichuanfood.com/wood-ear-mushroom-salad/" target="_blank">China Sichuan Food</a></td>
+		<td>Vegetarian</td>
+		<td>Chinese</td>
+		<td>&nbsp;</td>
+	</tr>
+
+
+
+	<tr>
+		<td>Sushi</td>
+		<td>&nbsp;</td>
+		<td>Vegetarian (if adjusted)</td>
+		<td>Japanese</td>
+		<td>&nbsp;</td>
+	</tr>
+	<tr>
+		<td>Fried Gnocchi with Garlic Mushrooms</td>
+		<td>&nbsp;</td>
+		<td>Vegetarian</td>
+		<td>&nbsp;</td>
+		<td>Gnocchi</td>
+	</tr>
+	<tr>
+		<td>Thai Green Curry</td>
+		<td>&nbsp;</td>
+		<td>Vegetarian (if adjusted)</td>
+		<td>Indian</td>
+		<td>Curry</td>
+	</tr>
+	<tr>
+		<td>Mushroom Soup</td>
+		<td>&nbsp;</td>
+		<td>Vegetarian</td>
+		<td>&nbsp;</td>
+		<td>Soup</td>
+	</tr>	
+	<tr>
+		<td>Croquetas de Jamón - Ham Croquettes</td>
+		<td><a href="https://www.spain-recipes.com/croquetas-jamon.html">Spain Recipes</a></td>
+		<td>Meat</td>
+		<td>&nbsp;</td>
+		<td>Tapas</td>
+	</tr>
+	<tr>
+		<td>Vegetable Paella</td>
+		<td>Ella Everyday</td>
+		<td>Vegetarian</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+	</tr>
+	<tr>
+		<td>Eggs Florentine</td>
+		<td>&nbsp;</td>
+		<td>Vegetarian</td>
+		<td>&nbsp;</td>
+		<td>Breakfast</td>
+	</tr>
+	<tr>
+		<td>Eggs Benedict</td>
+		<td>&nbsp;</td>
+		<td>Meat</td>
+		<td>&nbsp;</td>
+		<td>Breakfast</td>
+	</tr>
+	<tr>
+		<td>French Toast</td>
+		<td>&nbsp;</td>
+		<td>Vegetarian</td>
+		<td>&nbsp;</td>
+		<td>Breakfast</td>
+	</tr>
+	<tr>
+		<td>Garlic and Chorizo Fried Prawn with Garlic-Chili Linguine</td>
+		<td>&nbsp;</td>
+		<td>Fish / Meat</td>
+		<td>&nbsp;</td>
+		<td>Pasta</td>
+	</tr>
+	<tr>
+		<td>Potato, Onion and Basil Tortilla</td>
+		<td>Cafe Paradiso Seasons - p 232</td>
+		<td>Vegetarian</td>
+		<td>&nbsp;</td>
+		<td>Omlette / Tortilla</td>
+	</tr>
+	<tr>
+		<td>Linguine with Aubergine Tomato Pesto</td>
+		<td>Cafe Paradiso Seasons - p 162</td>
+		<td>Vegetarian</td>
+		<td>&nbsp;</td>
+		<td>Pasta</td>
+	</tr>
+	<tr>
+		<td>Fresh Herb and Feta Omlette with Asparagus, Avocado and Cherry Tomato Salsa</td>
+		<td>Cafe Paradiso Seasons - p 21</td>
+		<td>Vegetarian</td>
+		<td>&nbsp;</td>
+		<td>Omlette / Tortilla</td>
+	</tr>
+	<tr>
+		<td>Chickpea and Squash Salad</td>
+		<td><a href="recipes/Chickpea and Squash Salad.html">Link</a></td>
+		<td>Vegetarian</td>
+		<td>&nbsp;</td>
+		<td>Salad (Warm)</td>
+	</tr>
+	<tr>
+		<td>Jacket Potatoes filled with Black Beans, Avocado and Mushrooms</td>
+		<td>Ella Everyday</td>
+		<td>Vegetarian</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+	</tr>
+	<tr>
+		<td>Tabouleh, Garlic Yoghurt and Falafel</td>
+		<td>&nbsp;</td>
+		<td>Vegetarian</td>
+		<td>Middle Eastern</td>
+		<td>Salad</td>
+	</tr>
+	<tr>
+		<td>Roast Cauliflower, Potatoes, Red Peppers and Chickpeas with Green Leaves</td>
+		<td>&nbsp;</td>
+		<td>Vegetarian</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+	</tr>
+	<tr>
+		<td>Bagels with Salami, Rocket and Cream Cheese</td>
+		<td>&nbsp;</td>
+		<td>Meat</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+	</tr>
+	<tr>
+		<td>Green Beans, Chicken and Fried Gnocchi</td>
+		<td>&nbsp;</td>
+		<td>Meat</td>
+		<td>&nbsp;</td>
+		<td>Gnocchi</td>
+	</tr>
+	<tr>
+		<td>Cauliflower and Tofu Butter Masala with Naan Bread</td>
+		<td>&nbsp;</td>
+		<td>Vegetarian</td>
+		<td>Indian</td>
+		<td>&nbsp;</td>
+	</tr>
+	<tr>
+		<td>Tofu in Fish-Fragrant Sauce</td>
+		<td>&nbsp;</td>
+		<td>Vegetarian (if adjusted)</td>
+		<td>Chinese</td>
+		<td>&nbsp;</td>
+	</tr>
+	<tr>
+		<td>French Beans with Pork</td>
+		<td>&nbsp;</td>
+		<td>Meat</td>
+		<td>Chinese</td>
+		<td>&nbsp;</td>
+	</tr>
+	<tr>
+		<td>Tomato And Egg</td>
+		<td>&nbsp;</td>
+		<td>Vegetarian (if adjusted)</td>
+		<td>Chinese</td>
+		<td>&nbsp;</td>
+	</tr>
+	<tr>
+		<td>Sticky Pork Ribs with Kale and Potatoes</td>
+		<td>River Cottage - p. 210</td>
+		<td>Meat</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+	</tr>
+	<tr>
+		<td>Avocado and Bacon Sandwich Topped with Fried Egg</td>
+		<td>&nbsp;</td>
+		<td>Meat</td>
+		<td>&nbsp;</td>
+		<td>Breakfast;Lunch</td>
+	</tr>
+	<tr>
+		<td>Backed Chicken Curry</td>
+		<td>River Cottage - p. 223</td>
+		<td>Meat</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+	</tr>
+	<tr>
+		<td>Gnocchi with Basil Pesto</td>
+		<td>&nbsp;</td>
+		<td>Vegetarian</td>
+		<td>&nbsp;</td>
+		<td>Gnocchi</td>
+	</tr>
+	<tr>
+		<td>Mushroom Tarts with Salsa Tomato Salad and Baby Potato Salad</td>
+		<td>River Cottage - p. 327</td>
+		<td>Vegetarian</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+	</tr>
+	<tr>
+		<td>Sausages, Eggs and Fried Potatoes</td>
+		<td>&nbsp;</td>
+		<td>Meat</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+	</tr>
+	<tr>
+		<td>Roasted Vegetable Tray (cauliflower, asparagus, potatoes, peppers) and Chickpeas</td>
+		<td>&nbsp;</td>
+		<td>Vegetarian</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+	</tr>
+	<tr>
+		<td>Chicken Breast, Green Beans and Tomatoes and Parsley Potaotes</td>
+		<td>River Cottage - p. 306</td>
+		<td>Meat</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+	</tr>
+	<tr>
+		<td>Lamb Kebab and Tabouleh</td>
+		<td>&nbsp;</td>
+		<td>Meat</td>
+		<td>Middle Eastern</td>
+		<td>&nbsp;</td>
+	</tr>
+	<tr>
+		<td>Warm Potato Salad with Asparagus and Poached Eggs</td>
+		<td>&nbsp;</td>
+		<td>Vegetarian</td>
+		<td>&nbsp;</td>
+		<td>Salad (Warm)</td>
+	</tr>
+	<tr>
+		<td>Butter Beans (and Pasta) in Basil Pesto</td>
+		<td><a href="recipes/Warming Pesto Butter Beans.html">Link</a></td>
+		<td>Vegetarian</td>
+		<td>&nbsp;</td>
+		<td>Pasta</td>
+	</tr>
+	<tr>
+		<td>Mushroom and Wild Garlic Risotto</td>
+		<td>&nbsp;</td>
+		<td>Vegetarian</td>
+		<td>&nbsp;</td>
+		<td>Risotto</td>
+	</tr>
+	<tr>
+		<td>Squash Risotto</td>
+		<td>&nbsp;</td>
+		<td>Vegetarian</td>
+		<td>&nbsp;</td>
+		<td>Risotto</td>
+	</tr>
+	<tr>
+		<td>Beetroot Risotto with Peas and Asparagus</td>
+		<td>&nbsp;</td>
+		<td>Vegetarian</td>
+		<td>&nbsp;</td>
+		<td>Risotto</td>
+	</tr>
+	<tr>
+		<td>Green Beans, 5-Spices-Tofu and Fried Gnocchi</td>
+		<td>&nbsp;</td>
+		<td>Vegetarian</td>
+		<td>Chinese</td>
+		<td>Gnocchi</td>
+	</tr>
+	<tr>
+		<td>Salade Nicoise</td>
+		<td>&nbsp;</td>
+		<td>Fish</td>
+		<td>&nbsp;</td>
+		<td>Salad</td>
+	</tr>
+	<tr>
+		<td>Chicken Breast, Asparagus and New Potatoes</td>
+		<td>&nbsp;</td>
+		<td>Meat</td>
+		<td>&nbsp;</td>
+		<td>Main</td>
+	</tr>
+	<tr>
+		<td>Chickpea and Chorizo Salad</td>
+		<td><a href="recipes/Chickpea and Chorizo Salad.html">Link</a></td>
+		<td>Meat</td>
+		<td>&nbsp;</td>
+		<td>Salad (warm)</td>
+	</tr>
+	<tr>
+		<td>Cottage Pie with Broccoli</td>
+		<td>&nbsp;</td>
+		<td>Meat</td>
+		<td>UK</td>
+		<td>Main</td>
+	</tr>
+	<tr>
+		<td>Ham And Asparagus Quiche</td>
+		<td>&nbsp;</td>
+		<td>Meat</td>
+		<td>&nbsp;</td>
+		<td>Main / Lunch</td>
+	</tr>
+	<tr>
+		<td>Cauliflower, Asparagus and Kale Chips on Mashed Peas</td>
+		<td>Ella Everyday</td>
+		<td>Vegetarian&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>Main</td>
+	</tr>
+	<tr>
+		<td>Tofu Butter Masala</td>
+		<td>&nbsp;</td>
+		<td>Vegetarian</td>
+		<td>Indian</td>
+		<td>Main</td>
+	</tr>
+	<tr>
+		<td>Mussels in White Wine Sauce</td>
+		<td>&nbsp;</td>
+		<td>Fish</td>
+		<td>&nbsp;</td>
+		<td>Main</td>
+	</tr>
+	<tr>
+		<td>Onion and Tomato Omlette with Baby Potatoes and Mixed Leaves</td>
+		<td>&nbsp;</td>
+		<td>Vegetarian</td>
+		<td>&nbsp;</td>
+		<td>Main / Lunch</td>
+	</tr>
+	<tr>
+		<td>Spaghetti Cabonara</td>
+		<td><a href="https://www.jamieoliver.com/recipes/pasta-recipes/gennaro-s-classic-spaghetti-carbonara/" target="_blank">Jamie Oliver</a></td>
+		<td>Meat</td>
+		<td>&nbsp;</td>
+		<td>Main</td>
+	</tr>
+	<tr>
+		<td>Nockerl with Cabagge</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>Austrian</td>
+		<td>Main</td>
+	</tr>
+	<tr>
+		<td>Garlic and White Wine Pasta with Brussel Sprouts</td>
+		<td><a href="https://minimalistbaker.com/vegan-garlic-alfredo-pasta" target="_blank">Minimalist Baker</a></td>
+		<td>Vegetarian</td>
+		<td>&nbsp;</td>
+		<td>Main</td>
+	</tr>
+	<tr>
+		<td>Chicken and Chorizo Paella</td>
+		<td>&nbsp;</td>
+		<td>Fish / Meat</td>
+		<td>&nbsp;</td>
+		<td>Main</td>
+	</tr>
+	<tr>
+		<td>Pasta Aglio, Olio e Peperoncino</td>
+		<td>&nbsp;</td>
+		<td>Vegetarian</td>
+		<td>&nbsp;</td>
+		<td>Pasta</td>
+	</tr>
+	<tr>
+		<td>Fish Cakes with Peas, Roast Carrots and Parsley Sauce</td>
+		<td>&nbsp;</td>
+		<td>Fish</td>
+		<td>&nbsp;</td>
+		<td>Main</td>
+	</tr>
+	<tr>
+		<td>Spicy Aubergine with Tomato and Poached Egg</td>
+		<td><a href="http://www.cookstr.com/Vegetable-Recipes/Spicy-Eggplant-and-Tomato-with-Poached-Eggs" target="_blank">Cookstr.com</a></td>
+		<td>Vegetarian</td>
+		<td>&nbsp;</td>
+		<td>Main</td>
+	</tr>
+	<tr>
+		<td>Nut Burgers, Potato Wedges and Mixed Leaves</td>
+		<td>&nbsp;</td>
+		<td>Vegetarian</td>
+		<td>&nbsp;</td>
+		<td>Burgers</td>
+	</tr>
+	<tr>
+		<td>Spaghetti with Meat Balls</td>
+		<td>&nbsp;</td>
+		<td>Meat</td>
+		<td>&nbsp;</td>
+		<td>Main</td>
+	</tr>
+	<tr>
+		<td>Cabbage and Bacon</td>
+		<td>&nbsp;</td>
+		<td>Meat</td>
+		<td>Austrian;</td>
+		<td>Main</td>
+	</tr>
+	<tr>
+		<td>Dim Sum with Fried Chili Oil</td>
+		<td>&nbsp;</td>
+		<td>Meat</td>
+		<td>Chinese</td>
+		<td>Starter / Main</td>
+	</tr>
+	<tr>
+		<td>Sweet Potato Risotto</td>
+		<td>Ella Everyday</td>
+		<td>Vegetarian&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>Risotto</td>
+	</tr>
+	<tr>
+		<td>Warming Winter Bowl</td>
+		<td>Ella Everyday</td>
+		<td>Vegetarian&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>Main</td>
+	</tr>
+	<tr>
+		<td>Bean and Lentil Burgers with Potato Wedges</td>
+		<td>&nbsp;</td>
+		<td>Vegetarian</td>
+		<td>&nbsp;</td>
+		<td>Burgers</td>
+	</tr>
+	<tr>
+		<td>Wilted Spinach and Black Bean Salad</td>
+		<td>Ella Everyday</td>
+		<td>Vegetarian</td>
+		<td>&nbsp;</td>
+		<td>Salad (warm)</td>
+	</tr>
+	<tr>
+		<td>Celery Soup</td>
+		<td><a href="recipes/Celery Soup.html">Link</a></td>
+		<td>Vegetarian</td>
+		<td>&nbsp;</td>
+		<td>Soup</td>
+	</tr>
+	<tr>
+		<td>Tomato Soup</td>
+		<td>&nbsp;</td>
+		<td>Vegetarian</td>
+		<td>&nbsp;</td>
+		<td>Soup</td>
+	</tr>
+	<tr>
+		<td>Goulash</td>
+		<td>&nbsp;</td>
+		<td>Meat</td>
+		<td>Austrian</td>
+		<td>&nbsp;</td>
+	</tr>
+	<tr>
+		<td>Spaghetti Bolognese</td>
+		<td>&nbsp;</td>
+		<td>Meat</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+	</tr>
+	<tr>
+		<td>Goulash Soup</td>
+		<td>&nbsp;</td>
+		<td>Meat</td>
+		<td>Austrian</td>
+		<td>Soup</td>
+	</tr>
+	<tr>
+		<td>Rice Cakes in Soy Sauce and Green Beans</td>
+		<td>&nbsp;</td>
+		<td>Vegetarian (if adjusted)</td>
+		<td>Korean</td>
+		<td>&nbsp;</td>
+	</tr>
+	<tr>
+		<td>Rice Cake, Kimchi and Ground Pork Stir Fry</td>
+		<td>&nbsp;</td>
+		<td>Meat</td>
+		<td>Korean</td>
+		<td>&nbsp;</td>
+	</tr>
+	<tr>
+		<td>Pork Belly and Black Vegetables</td>
+		<td>&nbsp;</td>
+		<td>Meat</td>
+		<td>Chinese</td>
+		<td>&nbsp;</td>
+	</tr>
+	<tr>
+		<td>Lentil Lasagne</td>
+		<td>&nbsp;</td>
+		<td>Vegetarian</td>
+		<td>&nbsp;</td>
+		<td>Pasta</td>
+	</tr>	
+	<tr>
+		<td>Pasta with Green Vegan Pesto</td>
+		<td>&nbsp;</td>
+		<td>Vegetarian</td>
+		<td>&nbsp;</td>
+		<td>Pasta</td>
+	</tr>
+	<tr>
+		<td>Lasagne</td>
+		<td>&nbsp;</td>
+		<td>Meat</td>
+		<td>&nbsp;</td>
+		<td>Pasta</td>
+	</tr>
+	<tr>
+		<td>Hazelnut Flan with Peas and Potatoes</td>
+		<td>&nbsp;</td>
+		<td>Vegetarian</td>
+		<td>UK</td>
+		<td>&nbsp;</td>
+	</tr>
+	<tr>
+		<td>Toad in the Hole with Glazed Carrots, Kale and Mash</td>
+		<td>&nbsp;</td>
+		<td>Meat</td>
+		<td>UK</td>
+		<td>&nbsp;</td>
+	</tr>
+	<tr>
+		<td>Pumpkin Soup</td>
+		<td>&nbsp;</td>
+		<td>Vegetarian</td>
+		<td>Austrian</td>
+		<td>Soup</td>
+	</tr>
+	<tr>
+		<td>Pancakes</td>
+		<td>&nbsp;</td>
+		<td>Vegetarian</td>
+		<td>&nbsp;</td>
+		<td>Breakfast</td>
+	</tr>
+	<tr>
+		<td>Fish Pie</td>
+		<td>&nbsp;</td>
+		<td>Fish</td>
+		<td>&nbsp;</td>
+		<td>Main</td>
+	</tr>	
+	<tr>
+		<td>Chicken and Mushroom Pie</td>
+		<td>&nbsp;</td>
+		<td>Meat</td>
+		<td>&nbsp;</td>
+		<td>Main</td>
+	</tr>
+	<tr>
+		<td>Banana Oat Muffins</td>
+		<td><a href="recipes/Banana Oat Muffins.html">Link</a></td>
+		<td>Vegetarian</td>
+		<td>&nbsp;</td>
+		<td>Sweets</td>
+	</tr>
+	<tr>
+		<td>Caraway Seed Cake</td>
+		<td><a href="recipes/Caraway Seed Cake.html">Link</a></td>
+		<td>Vegetarian</td>
+		<td>&nbsp;</td>
+		<td>Sweets</td>
+	</tr>
+	<tr>
+		<td>Chocolate Mousse with Spicy Watermelon</td>
+		<td><a href="recipes/Chocolate Mousse with Spicy Watermelon.html">Link</a></td>
+		<td>Vegetarian</td>
+		<td>&nbsp;</td>
+		<td>Sweets</td>
+	</tr>
+	<tr>
+		<td>Coffee and Walnut Cake</td>
+		<td><a href="recipes/Coffee and Walnut Cake.html">Link</a></td>
+		<td>Vegetarian</td>
+		<td>&nbsp;</td>
+		<td>Sweets</td>
+	</tr>
+	<tr>
+		<td>Lemon Meringue Pie</td>
+		<td>&nbsp;</td>
+		<td>Vegetarian</td>
+		<td>&nbsp;</td>
+		<td>Sweets</td>
+	</tr>	
+	<tr>
+		<td>Flapjacks</td>
+		<td><a href="recipes/Flapjacks.html">Link</a></td>
+		<td>Vegetarian</td>
+		<td>&nbsp;</td>
+		<td>Sweets</td>
+	</tr>		
+	<tr>
+		<td>Gingerbread</td>
+		<td><a href="recipes/Gingerbread.html">Link</a></td>
+		<td>Vegetarian</td>
+		<td>&nbsp;</td>
+		<td>Sweets</td>
+	</tr>		
+	<tr>
+		<td>Nut & Chocolate Chip Cookies</td>
+		<td><a href="recipes/Nut & Chocolate Chip Cookies.html">Link</a></td>
+		<td>Vegetarian</td>
+		<td>&nbsp;</td>
+		<td>Sweets</td>
+	</tr>	
+	<tr>
+		<td>Panamatorte</td>
+		<td><a href="recipes/Panamatorte.html">Link</a></td>
+		<td>Vegetarian</td>
+		<td>&nbsp;</td>
+		<td>Sweets</td>
+	</tr>		
+	<tr>
+		<td>Pumpkin Pie</td>
+		<td><a href="recipes/Pumpkin Pie.html">Link</a></td>
+		<td>Vegetarian</td>
+		<td>&nbsp;</td>
+		<td>Sweets</td>
+	</tr>	
+	<tr>
+		<td>Rhubarb Crumble</td>
+		<td><a href="recipes/Rhubarb Crumble.html">Link</a></td>
+		<td>Vegetarian</td>
+		<td>&nbsp;</td>
+		<td>Sweets</td>
+	</tr>
+	<tr>
+		<td>Sacher Torte</td>
+		<td>&nbsp;</td>
+		<td>Vegetarian</td>
+		<td>&nbsp;</td>
+		<td>Sweets</td>
+	</tr>
+	<tr>
+		<td>Vegan Chocolate Cake</td>
+		<td><a href="recipes/Vegan Chocolate Cake.html">Link</a></td>
+		<td>Vegetarian</td>
+		<td>&nbsp;</td>
+		<td>Sweets</td>
+	</tr>	
+	
+</table>
+
+
+
+<script>
+function sortTable(n) {
+  var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
+  table = document.getElementById("meals");
+  switching = true;
+  //Set the sorting direction to ascending:
+  dir = "asc"; 
+  /*Make a loop that will continue until
+  no switching has been done:*/
+  while (switching) {
+    //start by saying: no switching is done:
+    switching = false;
+    rows = table.getElementsByTagName("TR");
+    /*Loop through all table rows (except the
+    first, which contains table headers):*/
+    for (i = 1; i < (rows.length - 1); i++) {
+      //start by saying there should be no switching:
+      shouldSwitch = false;
+      /*Get the two elements you want to compare,
+      one from current row and one from the next:*/
+      x = rows[i].getElementsByTagName("TD")[n];
+      y = rows[i + 1].getElementsByTagName("TD")[n];
+      /*check if the two rows should switch place,
+      based on the direction, asc or desc:*/
+      if (dir == "asc") {
+        if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
+          //if so, mark as a switch and break the loop:
+          shouldSwitch= true;
+          break;
+        }
+      } else if (dir == "desc") {
+        if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
+          //if so, mark as a switch and break the loop:
+          shouldSwitch= true;
+          break;
+        }
+      }
+    }
+    if (shouldSwitch) {
+      /*If a switch has been marked, make the switch
+      and mark that a switch has been done:*/
+      rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+      switching = true;
+      //Each time a switch is done, increase this count by 1:
+      switchcount ++;      
+    } else {
+      /*If no switching has been done AND the direction is "asc",
+      set the direction to "desc" and run the while loop again.*/
+      if (switchcount == 0 && dir == "asc") {
+        dir = "desc";
+        switching = true;
+      }
+    }
+  }
+}
+
+
+
+function searchTable() {
+  var input, filter, table, tr, td, i;
+  input = document.getElementById("searchInput");
+  filter = input.value.toUpperCase();
+  table = document.getElementById("meals");
+  tr = table.getElementsByTagName("tr");
+
+  // Loop through all table rows, and hide those who don't match the search query
+  for (i = 0; i < tr.length; i++) {
+  	for (k = 0; k < 5; k++) {	
+	    td = tr[i].getElementsByTagName("td")[k];
+    	if (td) {
+	      	if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
+		    	tr[i].style.display = "";
+		    	break;
+	      	}
+	     	else {
+	        tr[i].style.display = "none";
+      		}
+	    } 
+  	}
+  }
+}
+
+</script>
+
+
+</body>
+</html> 
